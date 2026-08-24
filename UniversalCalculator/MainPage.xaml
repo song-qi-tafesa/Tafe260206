@@ -8,54 +8,8 @@
 		</ResourceDictionary>
 	</Page.Resources>
 
-	<Grid>
-
-		<Grid x:Name="mainMenuGrid">
-
-		<Image
-    Source="Assets/abacus.jpg"
-    Width="100"
-    Height="100"
-    HorizontalAlignment="Right"
-    VerticalAlignment="Top"
-    Margin="0,20,20,0"/>
-
-		
-		<StackPanel
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center"
-        Width="300">
-
-			<TextBlock
-            Text="Universal Calculator"
-            FontSize="32"
-            HorizontalAlignment="Center"
-            Margin="0,0,0,30"/>
-
-			<Button
-            Content="Math Calculator"
-            Margin="0,5"/>
-
-			<Button
-            Content="Mortgage Calculator"
-            Margin="0,5"/>
-
-			<Button
-            Content="Currency Calculator"
-            Margin="0,5"/>
-
-			<Button
-            Content="Exit"
-            Margin="0,5"/>
-
-		</StackPanel>
-	</Grid>
-
 	<!-- TODO -->
-	<Grid x:Name="calculatorGrid"
-      Visibility="Collapsed"
-      Style="{StaticResource GridStyle}"
-      Margin="4,32,4,4">
+	<Grid Style="{StaticResource GridStyle}" Margin="4,32,4,4">
 		<!-- definitions -->
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="*" />
@@ -107,6 +61,4 @@
 			C
 		</Button>
 	</Grid>
-
-    </Grid>
 </Page>
