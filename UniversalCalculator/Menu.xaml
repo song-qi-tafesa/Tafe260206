@@ -36,15 +36,15 @@ Margin="0,20,20,0"/>
         Margin="0,5"/>
 
 				<Button
-        Content="Mortgage Calculator"
+        Content="Mortgage Calculator" Click="Mortgage_Button_Click"
         Margin="0,5"/>
 
 				<Button
-        Content="Currency Calculator"
+        Content="Currency Calculator" Click="Currency_Button_Click"
         Margin="0,5"/>
 
 				<Button
-        Content="Exit"
+        Content="Exit" Click="Exit_Button_Click"
         Margin="0,5"/>
 
 			</StackPanel>
