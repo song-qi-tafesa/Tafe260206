@@ -9,6 +9,170 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="70"/>
+			<RowDefinition Height="100"/>
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="300"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+
+		<!-- Title -->
+		<TextBlock
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Text="Mortgage Calculator"
+            FontSize="36"
+            FontWeight="Bold"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+
+
+		<!-- Principal borrowed -->
+		<TextBlock
+            Grid.Row="1"
+            Grid.Column="0"
+            Text="Principal borrowed: $"
+            FontSize="26"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,10,0"/>
+
+		<TextBox
+            x:Name="principalTextBox"
+            Grid.Row="1"
+            Grid.Column="1"
+            FontSize="24"
+            Margin="10,8,20,8"/>
+
+
+		<!-- Years -->
+		<TextBlock
+            Grid.Row="2"
+            Grid.Column="0"
+            Text="Years:"
+            FontSize="26"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,10,0"/>
+
+		<TextBox
+            x:Name="yearsTextBox"
+            Grid.Row="2"
+            Grid.Column="1"
+            FontSize="24"
+            Margin="10,8,20,8"/>
+
+
+		<!-- Months -->
+		<TextBlock
+            Grid.Row="3"
+            Grid.Column="0"
+            Text="Months:"
+            FontSize="26"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,10,0"/>
+
+		<TextBox
+            x:Name="monthsTextBox"
+            Grid.Row="3"
+            Grid.Column="1"
+            FontSize="24"
+            Margin="10,8,20,8"/>
+
+
+		<!-- Annual Interest Rate -->
+		<TextBlock
+            Grid.Row="4"
+            Grid.Column="0"
+            Text="Annual Interest Rate: %"
+            FontSize="26"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,10,0"/>
+
+		<TextBox
+            x:Name="annualInterestRateTextBox"
+            Grid.Row="4"
+            Grid.Column="1"
+            FontSize="24"
+            Margin="10,8,20,8"/>
+
+
+		<!-- Monthly Interest Rate -->
+		<TextBlock
+            Grid.Row="5"
+            Grid.Column="0"
+            Text="Monthly Interest Rate:"
+            FontSize="26"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,10,0"/>
+
+		<TextBox
+            x:Name="monthlyInterestRateTextBox"
+            Grid.Row="5"
+            Grid.Column="1"
+            FontSize="24"
+            IsReadOnly="True"
+            Margin="10,8,20,8"/>
+
+
+		<!-- Monthly Repayment -->
+		<TextBlock
+            Grid.Row="6"
+            Grid.Column="0"
+            Text="Monthly Repayment:"
+            FontSize="26"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,10,0"/>
+
+		<TextBox
+            x:Name="monthlyRepaymentTextBox"
+            Grid.Row="6"
+            Grid.Column="1"
+            FontSize="24"
+            IsReadOnly="True"
+            Margin="10,8,20,8"/>
+
+
+		<!-- Buttons -->
+		<StackPanel
+            Grid.Row="7"
+            Grid.Column="1"
+            Orientation="Horizontal"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,20,0">
+
+			<Button
+                x:Name="calculateButton"
+                Content="Calculate"
+                FontSize="24"
+                Click="Calculate_Button_Click"
+                Margin="0,0,15,0"
+                Padding="15,8"/>
+
+			<Button
+                x:Name="exitButton"
+                Content="Exit"
+                FontSize="24"
+                Click="Exit_Button_Click"
+                Padding="15,8"/>
+
+		</StackPanel>
 
     </Grid>
 </Page>
