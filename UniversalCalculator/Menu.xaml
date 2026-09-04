@@ -11,41 +11,39 @@
     <Grid>
 		<Grid x:Name="mainMenuGrid">
 
-			<Image
-Source="Assets/abacus.jpg"
-Width="100"
-Height="100"
-HorizontalAlignment="Right"
-VerticalAlignment="Top"
-Margin="0,20,20,0"/>
+			<Image Source="Assets/abacus.jpg" Width="100" Height="100" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,20,0"/>
 
 
 			<StackPanel
-    HorizontalAlignment="Center"
-    VerticalAlignment="Center"
-    Width="300">
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="300">
 
 				<TextBlock
-        Text="Universal Calculator"
-        FontSize="32"
-        HorizontalAlignment="Center"
-        Margin="0,0,0,30"/>
+                    Text="Universal Calculator"
+                    FontSize="32"
+                    HorizontalAlignment="Center"
+                    Margin="0,0,0,30"/>
 
 				<Button
-        Content="Math Calculator" Click="Math_Button_Click"
-        Margin="0,5"/>
+                    Content="Math Calculator" Click="Math_Button_Click"
+                    Background="{ThemeResource SystemControlBackgroundBaseLowBrush}"
+                    Margin="0,5"/>
 
 				<Button
-        Content="Mortgage Calculator" Click="Mortgage_Button_Click"
-        Margin="0,5"/>
+                    Content="Mortgage Calculator" Click="Mortgage_Button_Click"
+                    Background="{ThemeResource SystemControlBackgroundBaseLowBrush}"
+                    Margin="0,5"/>
 
 				<Button
-        Content="Currency Calculator" Click="Currency_Button_Click"
-        Margin="0,5"/>
+                    Content="Currency Calculator" Click="Currency_Button_Click"
+                    Background="{ThemeResource SystemControlBackgroundBaseLowBrush}"
+                    Margin="0,5"/>
 
 				<Button
-        Content="Exit" Click="Exit_Button_Click"
-        Margin="0,5"/>
+                    Content="Exit" Click="Exit_Button_Click"
+                    Background="{ThemeResource SystemControlBackgroundBaseLowBrush}"
+                    Margin="0,5"/>
 
 			</StackPanel>
 		</Grid>
