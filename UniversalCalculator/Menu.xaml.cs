@@ -46,6 +46,11 @@ namespace Calculator
 			this.Frame.Navigate(typeof(Currency));
 		}
 
+		private void Trip_Calculator_Click(object sender, RoutedEventArgs e)
+		{
+			displayMessageBlock.Text = " Trip calculator C# code will be developed later.";
+		}
+
 		private void Exit_Button_Click(object sender, RoutedEventArgs e)
 		{
 			CoreApplication.Exit();

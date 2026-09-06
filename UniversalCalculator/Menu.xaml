@@ -41,9 +41,18 @@
                     Margin="0,5"/>
 
 				<Button
+					Content="Trip Calculator" Click="Trip_Calculator_Click"
+					Background="{ThemeResource SystemControlBackgroundBaseLowBrush}"
+					Margin="0,5"/>
+
+				<Button
                     Content="Exit" Click="Exit_Button_Click"
                     Background="{ThemeResource SystemControlBackgroundBaseLowBrush}"
                     Margin="0,5"/>
+
+				<TextBlock
+					x:Name="displayMessageBlock"
+					FontSize="10"/>
 
 			</StackPanel>
 		</Grid>
